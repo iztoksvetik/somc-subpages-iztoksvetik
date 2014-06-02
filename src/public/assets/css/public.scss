@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?44669996');
+  src: url('../font/fontello.eot?44669996#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?44669996') format('woff'),
+       url('../font/fontello.ttf?44669996') format('truetype'),
+       url('../font/fontello.svg?44669996#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  margin-left: .2em;
+}
+ 
+.icon-sort-name-up:before { content: '\e800'; } 
+.icon-sort-name-down:before { content: '\e801'; } 
+.icon-down-open:before { content: '\e802'; } 
+.icon-up-open:before { content: '\e803'; } 
+
+.somc-subpages-iztoksvetik {
+	> a {
+		&.ssis-order, {
+			display: block;
+			text-align: right;
+			background: #f3f4f6;
+			padding: 15px 15px 15px 0;
+			color: black;
+			&:hover {
+				color: #3287bd;
+			}
+			&.ssis-order-desc {
+				display: none;
+			}
+			&.ordered {
+				color: #3287bd;
+			}
+		}
+		&.ssis-more {
+			display: none;
+		}
+	}
+	ul.ssis-list {
+		list-style: none;
+		margin: 0;
+		li {
+			margin-left: 0;
+			background: #f3f4f6;
+			position: relative;
+			a {
+				color: #3287bd;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+				&.ssis-order, &.ssis-more {
+					position: absolute;
+					top: 15px;
+					right: 15px;
+					color: black;
+					&:hover {
+						color: #3287bd;
+					}
+				}
+				&.ssis-order {
+					right: 35px;
+					display: none;
+				}
+			}
+			img.wp-post-image {
+				box-shadow: none;
+				width: 30px;
+				position: absolute;
+				top: 15px;
+				left: 15px;
+			}
+			.content {
+				position: relative;
+				padding: 15px 15px 15px 55px;
+				min-height: 30px;
+			}
+			&.open {
+				> ul {
+					padding: 1px;
+				}
+				> a.ssis-order-asc {
+					display: block;
+				}
+				a.ordered {
+					color: #3287bd;
+				}
+			}
+			ul {
+				margin: 0;
+			}
+		}
+		ul {
+			display: none;
+			
+		}
+	}
+}
